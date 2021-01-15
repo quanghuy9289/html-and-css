@@ -1,0 +1,10 @@
+#image1 {
+  background-image: url("../images/logo.gif");
+}
+
+#image1:hover {
+  background-image: url("../images/sampson.jpg");
+}
+
+#image2 {
+}
