@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Form</title>
+    <style>
+      form {
+        width: 500px;
+        margin: 20px auto;
+        border: 1px solid black;
+        padding: 1em;
+      }
+      input {
+        width: 150px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form name="email_form" action="subscribe.php" method="POST">
+      <p>Please enter your e-mail address to subscribe to our newsletter.</p>
+      <p>E-Mail: <input type="text" name="email" /></p>
+      <p><input type="submit" name="submit" value="Subscribe" /></p>
+    </form>
+  </body>
+</html>

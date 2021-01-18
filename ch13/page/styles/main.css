@@ -1,0 +1,198 @@
+/* common style */
+html {
+  background-image: -webkit-linear-gradient(top, white 0%, orange 100%);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 87.5%;
+  width: 900px;
+  margin: 2em auto;
+  border: 2px solid black;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px black;
+  background-color: white;
+  padding: 1.5em 0;
+}
+
+a:link {
+  color: #09a009;
+}
+a:visited {
+  color: orange;
+}
+a:hover,
+a:focus {
+  color: blue;
+}
+
+em {
+  font-weight: bold;
+}
+
+p {
+  margin-top: 0.1em;
+}
+
+fieldset {
+  width: 100%;
+  margin: 1em 0;
+  border: 2px solid silver;
+  border-radius: 5px;
+}
+
+legend {
+  color: #09a009;
+  font-size: 90%;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+/* style for header */
+header {
+  /* border-bottom: 2px solid #e0dd08; */
+  padding: 0 2em 1em;
+}
+
+header img {
+  float: left;
+}
+
+header h2 {
+  color: orange;
+  font-size: 200%;
+  text-shadow: 2px 2px black;
+  /* text-align: center; */
+  margin-left: 5em;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+header h3 {
+  color: #09a009;
+  /* text-align: center; */
+  margin-left: 8.5em;
+  font-style: italic;
+  margin-top: 0.2em;
+}
+
+/* style for navigation */
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu ul li {
+  flex-basis: 20%;
+}
+
+.nav-menu ul li a {
+  display: block;
+  padding: 0.7em 0;
+  background-color: #facd8a;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* style for main */
+main {
+  clear: both;
+  padding: 0 2em;
+}
+
+main h1 {
+  font-size: 170%;
+}
+
+main .date_passed {
+  color: gray;
+}
+
+main h2 {
+  font-size: 150%;
+  margin-bottom: 0.3em;
+}
+
+/* style for aside */
+aside {
+  float: right;
+  width: 30%;
+  padding-left: 2em;
+}
+
+aside h3 {
+  margin-top: 0;
+  font-size: 100%;
+}
+
+aside ul {
+  padding-left: 1em;
+}
+
+aside ul li {
+  font-size: 90%;
+  margin-bottom: 0.2em;
+}
+
+/* style for article */
+article {
+  width: 63%;
+}
+
+form label {
+  width: 10em;
+  float: left;
+  text-align: right;
+}
+
+form input,
+form select {
+  width: 12em;
+  margin: 0 0 0.5em 0.5em;
+  vertical-align: middle;
+}
+
+form input[type="submit"] {
+  margin-left: 10em;
+}
+
+input#tickets_guest {
+  width: 5em;
+}
+
+form .button {
+  width: 7em;
+}
+
+/* form input:required,
+form input[required] {
+  border: 3px solid red;
+} */
+form input:valid {
+  border: 1px solid black;
+}
+form input:invalid {
+  /* box-shadow: none; */
+  border: 1px solid red;
+}
+
+/* main .indent {
+  text-indent: 2em;
+} */
+
+/* style for footer */
+footer {
+  border-top: 2px solid #e0dd08;
+  padding: 0 2em;
+}
+
+footer p {
+  text-align: right;
+  font-size: 80%;
+  margin-top: 2em;
+}

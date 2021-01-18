@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nested tables</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        border: 1px solid black;
+        margin: 10px auto;
+      }
+      caption {
+        font-weight: bold;
+        font-size: 110%;
+        padding-bottom: 0.25em;
+      }
+      tr {
+        border-top: 1px solid black;
+      }
+      td,
+      th {
+        padding: 3px 7px;
+      }
+      #outer {
+        border: 1px solid black;
+      }
+      #outer th {
+        background-color: #b0e0e6;
+      }
+      #inner {
+        border: 1px solid black;
+        margin: 0;
+      }
+      #inner th {
+        background-color: white;
+      }
+      th:first-child {
+        text-align: left;
+      }
+      th:nth-child(n + 2),
+      td {
+        text-align: right;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table id="outer">
+      <caption>
+        YTD Sales by Region
+      </caption>
+      <tr>
+        <th>Region</th>
+        <th>YTD sales</th>
+        <th>NYD sales</th>
+      </tr>
+      <tr>
+        <th>West</th>
+        <td>$68,684.34</td>
+        <td>$55,584.56</td>
+      </tr>
+      <tr>
+        <th>Central</th>
+        <td>
+          <table id="inner">
+            <tr>
+              <th>North</th>
+              <td>$21,223.08</td>
+            </tr>
+            <tr>
+              <th>South</th>
+              <td>$41,274.06</td>
+            </tr>
+          </table>
+        </td>
+        <td>
+          <table id="inner">
+            <tr>
+              <th>North</th>
+              <td>$25,433.08</td>
+            </tr>
+            <tr>
+              <th>South</th>
+              <td>$21,324.06</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <th>East</th>
+        <td>$72,741.06</td>
+        <td>$82,541.90</td>
+      </tr>
+    </table>
+  </body>
+</html>

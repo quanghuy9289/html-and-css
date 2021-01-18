@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dates</title>
+    <style>
+      body {
+        margin: 30px;
+      }
+      label {
+        float: left;
+        width: 10em;
+        text-align: right;
+      }
+      input {
+        width: 15em;
+        margin-left: 1em;
+        margin-bottom: 0.5em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form name="date_form" method="post">
+      <!-- <label for="datetime">Date and time:</label> <input type="datetime" name="datetime" id="datetime" /> <br /><br /> -->
+
+      <label for="datetimelocal">Local date and time:</label>
+      <input type="datetime-local" name="datetimelocal" id="datetimelocal" /><br /><br />
+
+      <label for="month">Month:</label> <input type="month" name="month" id="month" /><br /><br />
+
+      <label for="week">Week:</label> <input type="week" name="week" id="week" /><br /><br />
+
+      <label for="time">Time:</label> <input type="time" name="time" id="time" /><br /><br />
+
+      <label for="date">Date:</label> <input type="date" name="date" id="date" />
+    </form>
+  </body>
+</html>

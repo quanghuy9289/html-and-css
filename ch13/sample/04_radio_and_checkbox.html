@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Radio Buttons and Check Boxes</title>
+    <style>
+      body {
+        margin: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form name="my_form" action="order.php" method="post">
+      Crust:<br />
+      <input type="radio" name="crust" value="thin" />Thin Crust<br />
+      <input type="radio" name="crust" value="deep" />Deep Dish<br />
+      <input type="radio" name="crust" value="hand" checked />Hand Tossed<br /><br />
+
+      Toppings:<br />
+      <input type="checkbox" name="topping1" value="pepperoni" />Pepperoni<br />
+      <input type="checkbox" name="topping2" value="mushrooms" />Mushrooms<br />
+      <input type="checkbox" name="topping3" value="olives" />Olives<br /><br />
+
+      <input type="submit" name"submit" value="Submit"> <input type="reset" name"reset">
+    </form>
+  </body>
+</html>
