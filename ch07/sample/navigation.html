@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation sample</title>
+    <style>
+      h1 {
+        font-size: 150%;
+        clear: both;
+      }
+      /* navigation menu 1 */
+      #nav-menu-1 ul {
+        list-style-type: none;
+      }
+
+      #nav-menu-1 ul li {
+        width: 200px;
+        border: 2px solid blue;
+        margin-bottom: 0.5em;
+      }
+      #nav-menu-1 ul li a {
+        display: block;
+        text-decoration: none;
+        padding: 0.5em 1em;
+        font-weight: bold;
+        color: blue;
+      }
+      #nav-menu-1 ul li a:hover,
+      #nav-menu-1 ul li a:focus {
+        background-color: cyan;
+      }
+
+      /* navigation menu 2 */
+      #nav-menu-2 {
+        margin-bottom: 4em;
+      }
+      #nav-menu-2 ul {
+        list-style-type: none;
+      }
+      #nav-menu-2 ul li {
+        float: left;
+        width: 200px;
+      }
+      #nav-menu-2 ul li a {
+        display: block;
+        text-decoration: none;
+        padding: 0.5em 1em;
+        font-weight: bold;
+        color: white;
+        background-color: blue;
+        border-right: 2px solid white;
+        text-align: center;
+      }
+      #nav-menu-2 ul li a:nth-last-child {
+        border-right: none;
+      }
+      #nav-menu-2 ul li a:hover,
+      #nav-menu-2 ul li a:focus {
+        background-color: #026666;
+      }
+
+      /* multi-tiers navigation menu */
+      #nav-menu-3 ul {
+        list-style-type: none;
+        position: relative;
+      }
+      #nav-menu-3 ul li {
+        float: left;
+        width: 200px;
+      }
+      #nav-menu-3 ul li a {
+        display: block;
+        text-decoration: none;
+        padding: 0.5em 1em;
+        font-weight: bold;
+        color: white;
+        background-color: blue;
+        text-align: center;
+      }
+      #nav-menu-3 ul li a:hover,
+      #nav-menu-3 ul li a:focus {
+        background-color: #026666;
+      }
+      #nav-menu-3 ul ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        padding: 0;
+        margin: 0;
+      }
+      #nav-menu-3 ul ul li {
+        clear: both;
+        position: relative;
+      }
+      #nav-menu-3 ul li:hover > ul {
+        display: block;
+      }
+      #nav-menu-3 > ul::after {
+        display: block;
+        clear: both;
+        content: "";
+      }
+      #nav-menu-3 ul ul li ul {
+        position: absolute;
+        top: 0;
+        left: 100%;
+      }
+      #nav-menu-3 ul li.last-item ul li ul {
+        position: absolute;
+        top: 0;
+        left: -100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Vertical navigation</h1>
+    <nav id="nav-menu-1">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Get Tickets</a></li>
+        <li><a href="">Become a Member</a></li>
+        <li><a href="">About Us</a></li>
+      </ul>
+    </nav>
+
+    <h1>Horizontal navigation</h1>
+    <nav id="nav-menu-2">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Get Tickets</a></li>
+        <li><a href="">Become a Member</a></li>
+        <li><a href="">About Us</a></li>
+      </ul>
+    </nav>
+
+    <h1>Horizontal 2-tiers navigation</h1>
+    <nav id="nav-menu-3">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li>
+          <a href="">Speakers</a>
+          <ul>
+            <li><a href="#">Jeffrey Toobin</a></li>
+            <li><a href="#">Andrew Ross Sorkin</a></li>
+            <li><a href="#">Amy Chua</a></li>
+            <li>
+              <a href="#">Scott Sampson</a>
+              <ul>
+                <li><a href="#">September 2010</a></li>
+                <li><a href="#">February 2015</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="">Become a Member</a></li>
+        <li class="last-item">
+          <a href="">About Us</a>
+          <ul>
+            <li><a href="#">Our History</a></li>
+            <li><a href="#">Board of Directors</a></li>
+            <li>
+              <a href="#">Past Speakers</a>
+              <ul>
+                <li><a href="#">2014</a></li>
+                <li><a href="#">2013</a></li>
+                <li><a href="#">2012</a></li>
+                <li><a href="#">2011</a></li>
+                <li><a href="#">2010</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Contact Information</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
